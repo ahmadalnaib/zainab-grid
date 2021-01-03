@@ -70,13 +70,14 @@ nav ul {
 
 #showcase{
   min-height: 90vh;
-  margin: auto;
+  margin:  4rem auto;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  
 
 }
 
@@ -86,7 +87,7 @@ nav ul {
   align-items: center;
   justify-content: center;
   flex:  2 1 40rem;
-  text-align: justify;
+ 
 }
 
 .showcase-content h2 {
@@ -95,26 +96,34 @@ nav ul {
 
 .showcase-content p {
   font-size: 3rem;
-  text-align: justify;
+  
 }
 
 .showcase-img {
   flex: 1 1 40rem;
   margin-top: 2rem;
   position: relative;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background: #312c2e;
+  padding: 2rem;
+ 
 }
 
 .showcase-img img {
   border-radius:10px ;
+ 
 }
 .lead {
   padding-bottom: 4rem;
+  color: #525252;
 }
 
 .img-zainab {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
 }
 
 .btn-showcase{
@@ -245,4 +254,66 @@ transform: rotateZ(0deg);
 }
 
 
+}
+
+
+/* mobile view */
+
+@media screen and (max-width:500px)
+{
+ #showcase {
+   margin-top: 2rem;
+ }
+
+ .plant {
+   width: 150px;
+ }
+
+}
+
+
+
+/* about section */
+
+.about {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 8rem auto;
+}
+
+.about-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  margin:  auto;
+  flex:2 1 40rem;
+  background: #312c2e;
+  color: #Fff;
+  padding: 2rem;
+  text-align: justify;
+  border-radius: 10px;
+
+}
+.about-text h3 {
+  font-size: 1.8rem;
+  color: #ccc;
+  text-decoration: underline;
+}
+.about-text p {
+  font-size: 1.7rem;
+  padding: 2rem;
+  color: #Fff;
+}
+
+.about-img {
+flex: 1 1 40rem;
+}
+
+.about-img img {
+  width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
 }
