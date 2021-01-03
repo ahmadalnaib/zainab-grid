@@ -1,6 +1,120 @@
+/* setup the page */
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&family=Roboto:wght@100&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+nav .logo{
+  flex:  1 1 25rem;
+  font-family: 'Rakkas', cursive;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex:  1 1 25rem;
+  
+}
+
+.navbar{
+  box-shadow:0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* showcase */
+
+#showcase{
+  min-height: 90vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex:  2 1 40rem;
+  text-align: justify;
+}
+
+.showcase-content h2 {
+  font-size: 5rem;
+}
+
+.showcase-content p {
+  font-size: 3rem;
+  text-align: justify;
+}
+
+.showcase-img {
+  flex: 1 1 40rem;
+  margin-top: 2rem;
+}
+
+.showcase-img img {
+  border-radius:10px ;
+}
+.lead {
+  padding-bottom: 4rem;
+}
+
+.img-zainab {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-showcase{
+  padding: 2rem 8rem;
+  border:  3px solid #000;
+}
