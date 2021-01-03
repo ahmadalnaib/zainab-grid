@@ -17,6 +17,7 @@ img {
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
+  animation: opening 1s ease-in-out;
 }
 
 .flex{
@@ -75,6 +76,7 @@ nav ul {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
 }
 
@@ -99,6 +101,7 @@ nav ul {
 .showcase-img {
   flex: 1 1 40rem;
   margin-top: 2rem;
+  position: relative;
 }
 
 .showcase-img img {
@@ -117,4 +120,62 @@ nav ul {
 .btn-showcase{
   padding: 2rem 8rem;
   border:  3px solid #000;
+}
+
+.plant {
+  position: absolute;
+  bottom: 0;
+  left: -16%;
+  transform: translateY(10%)  rotateZ(-10deg) rotateX(-90deg);
+  animation: plant 1.5s ease-in-out 0.5s forwards,
+  plant-shake 2.5s infinite ease alternate-reverse 2s;
+  
+  ;
+ 
+  transform-origin: bottom;
+  
+}
+
+.plant1 {
+  width: 300px;
+  left: 30%;
+ 
+}
+.plant2 {
+  left: 50%;
+  width: 300px;
+}
+
+
+
+/* animations */
+@keyframes opening {
+  from {
+ opacity: 0;
+  }
+  to {
+opacity: 1;
+  }
+}
+
+/* plants */
+
+@keyframes plant {
+  from {
+ transform: translateY(10%)  rotateZ(-10deg) rotateX(-90deg);
+  }
+
+  to {
+   transform: translateY(0%) rotateZ(0deg) rotateX(0deg);
+  }
+}
+
+
+@keyframes plant-shake{
+  from {
+transform: rotateZ(-5deg);
+  }
+  to {
+transform: rotateZ(0deg);
+  }
 }
